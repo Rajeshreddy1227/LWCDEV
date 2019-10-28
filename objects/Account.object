@@ -340,6 +340,10 @@
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
+    <Field>
+        <fullName>GitField__c</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </Field>
     <fields>
         <fullName>YearStarted</fullName>
         <trackFeedHistory>false</trackFeedHistory>
