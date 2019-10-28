@@ -63,7 +63,7 @@
                 "../../lwc/getterSetterDemo2/getterSetterDemo2.js"
             ],
             "c/helloWorld": [
-                "../../lwc/helloWorld/helloWorld.js"
+                "helloWorld/helloWorld.js"
             ],
             "c/ifElseDirDemo": [
                 "../../lwc/ifElseDirDemo/ifElseDirDemo.js"
