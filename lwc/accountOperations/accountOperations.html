@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Account Managmt">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-input name="Name" type = "Text" label = "Account Name" onchange={accountNameChangehandler}></lightning-input>
+                <lightning-input name="Phone" type="Phone" label = "Account Phone" onchange={accountPhoneChangehandler}></lightning-input>
+                <lightning-input name="URL" label = "Website" type = "Url" onchange={accountUrlChangehandler}></lightning-input>
+
+                <lightning-button name="Submit" label="Submit" variant="brand" onclick={submitAccount}></lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="around-small">
+                <lightning-card title="View Record">
+                   <p> <lightning-formatted-text title="Name" value={accountName}></lightning-formatted-text><br/></p>
+                    <p><lightning-formatted-phone title="Phone" value={accountPhone}></lightning-formatted-phone><br/></p>
+                  <p>  <lightning-formatted-url title="Website" value={accountWebsite}></lightning-formatted-url></p>
+                </lightning-card>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

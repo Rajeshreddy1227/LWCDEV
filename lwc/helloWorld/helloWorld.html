@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Hello World" >
+        <div class="greeting-class">Hello World!{propBinding}</div><br/>
+        <div style="color: Green; background:black">Inline styling</div><br/>
+
+        Greeting Text from JS:{greettext}
+        <br/><br/>
+        Greet Response from HTML:{greetres}
+        <lightning-input label= 'Greet' type='text' onchange={Greetme} >
+        </lightning-input>
+    </lightning-card>
+</template>

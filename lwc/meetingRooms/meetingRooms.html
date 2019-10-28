@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-card title="Demo:@api and passing the  property from Par to child(public par)">
+            <ul>
+                <template for:each={meetingRoomsInfo} for:item="currentRoom">
+                    <li key={currentRoom.roomName}>
+                        <c-meeting-room meeting-room-info={currentRoom}></c-meeting-room>
+                    </li>
+                </template>
+
+            </ul>
+        </lightning-card>
+    </div>
+</template>

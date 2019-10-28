@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title='Select Alternative'>
+    <lightning-combobox
+            name="Opportunity"
+            label="Select an Opportunity"
+            value={value}
+            placeholder="--Select--"
+            options={optyName1}
+            onchange={handleChange}
+    ></lightning-combobox>
+    <lightning-button label='Submit' variant='Brand' onclick={onSubmit}></lightning-button>
+    <p style="color: blue">Selected value is: </p><b style="color: red;">{value}</b>
+   Identifier: <b>{identifier}</b>
+</lightning-card>
+</template>

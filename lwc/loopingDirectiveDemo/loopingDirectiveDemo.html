@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Looping Directive Demo">
+        <H1>For:Each Demo</H1>
+        <template for:each={cities} for:item="item">
+           <p key={item}></p> 
+              {item}            
+        </template>
+<br/><br/>
+        <div class="size22">Iterator Demo!</div>
+
+         <ul>
+                <template iterator:it={contacts}>
+                  <li key={it.value.Id}>
+                    <div if:true={it.first} class="list-first"></div>
+                    {it.value.Name}, {it.value.Title}
+                    <div if:true={it.last} class="list-last"></div>
+                  </li>
+                </template>
+              </ul>  
+      
+    </lightning-card>
+</template>

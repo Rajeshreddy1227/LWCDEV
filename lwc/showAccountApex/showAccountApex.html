@@ -1,0 +1,30 @@
+<template>
+    <template if:true={accData}>
+        <!-- <lightning-card title="I am in Demo">
+            <p>Account Name:{accData.Name}</p>
+            <p>Industry: {accData.Industry} </p>
+        </lightning-card> -->
+                 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    
+                    <header class="slds-modal__header">
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">This Account Has Been Identified as a Duplicate.</h2>
+                    </header>
+                    
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <p>The party ID you searched for has been identified as a duplicate and merged with</p>
+                        <p> {accData.Industry} - {accData.Name}--. All data created against this merged party ID has been preserved and migrated. Please click OK and you will be redirected to the new account.</p><br></br>
+                        <p>Questions? Please contact <a>CustomerUpdates@volvo.com</a></p>
+                    </div>
+                    
+                    <footer class="slds-modal__footer">
+                        <lightning-button variant="brand" 
+                        label="OK"
+                        title="OK"
+                        onclick={goHandler}></lightning-button>
+                    </footer>
+                </div>
+            </section> 
+    </template> 
+</template>

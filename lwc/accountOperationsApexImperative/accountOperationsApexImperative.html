@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Fetched from APEX">
+        <lightning-input type="text" label="Enter the Number of Records" onchange={changeHandler}></lightning-input>
+        <lightning-button label="Enter Number" onclick={buttonHandler}></lightning-button>
+        <ul>
+            <template if:true={responseReceived}>
+                <template for:each={accounts} for:item="currRec">
+                    <li key={accounts.Id}>
+                        <div class="slds-p-around_medium lgc-bg">
+                            <lightning-tile label={currRec.Name} type="media">
+                                <lightning-icon slot="media" icon-name="standard:account"></lightning-icon>
+                                <p class="slds-truncate" title={currRec.Phone}>{currRec.Phone}</p>
+                            </lightning-tile>
+                        </div>
+                    </li>
+                </template>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

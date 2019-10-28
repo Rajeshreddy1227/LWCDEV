@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title='Directive:IfelseDemo'>
+    <div> If else demo and checkbox Demo</div>
+    <div>
+    <div>Check or Uncheck the check-box</div>
+    <lightning-input label="Here" type='checkbox' onchange={getVal}></lightning-input>
+   <B> <template if:true={checkboxReturn}>
+        <div> I am true!</div>
+    </template>
+    <template if:false={checkboxReturn}>
+            <div> I am false!</div>
+        </template>
+    </B>
+    </div>
+
+</lightning-card>
+</template>

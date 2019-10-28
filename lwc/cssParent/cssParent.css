@@ -1,0 +1,6 @@
+/*:host{
+    font-size: xx-large;
+}   */ /*effected entire comp and also Child Comp*/
+div{
+    font-size: xx-large;
+}

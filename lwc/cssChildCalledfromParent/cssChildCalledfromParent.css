@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    background: whitesmoke;
+    font-size: x-large;
+}
+:host(.active) {
+    display: block;
+    background: red;
+    font-size: x-large;
+}

@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="Simple Calculator" icon-name="standard:formula">
+        <lightning-layout multiple-rows=true>
+            <lightning-layout-item size=12 padding="around-medium">
+                <lightning-input type="number" label="firstNumber" name="num1" onchange={getdataHandler}>
+                </lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size=12 padding="around-medium">
+                <lightning-input type="number" label="secondNumber" name="num2" onchange={getdataHandler}>
+                </lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size=12 padding="around-medium">
+                <lightning-button-group>
+                    <lightning-button  label="add" icon-name="utility:add" icon-position="right"
+                        onclick={addHandler}>
+                    </lightning-button>
+                    <lightning-button name="subtract" label="subtract" icon-name="utility:dash" icon-position="right" onclick={subHandler}>
+                    </lightning-button>
+                    <lightning-button name="mutltiply" label="mutltiply" icon-name="utility:close"
+                        icon-position="right" onclick={mulHandler}></lightning-button>
+                    <lightning-button name="divide" label="divide" icon-name="utility:magicwand" icon-position="right" onclick={divHandler}>
+                    </lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+
+            <lightning-layout-item size=12 padding="around-medium">
+                <lightning-formatted-text value={currResult}></lightning-formatted-text>
+            </lightning-layout-item>
+
+            <lightning-layout-item size=12 padding="around-medium">
+                    <lightning-input type="checkbox" label="show Prev Results" onchange={showPrevResToggle}></lightning-input>
+                    <template if:true={showResults}>
+                            <ul>
+                                <template iterator:it={previousResultArray}>
+                                
+                                    <li key={it.value}>
+                                            <div if:true={it.first} class="slds-border_top"></div>
+                                            <lightning-formatted-text value={it.value}></lightning-formatted-text>
+                                            <div if:true={it.last} class="slds-border_bottom"></div>
+                                    </li>
+                                    
+                                </template>
+                            </ul>
+                    </template>
+                </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

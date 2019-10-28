@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-card title="LDS record Form">
+            <!-- <lightning-record-form object-api-name="Account" record-id={recordId} columns="2" fields={fieldArray} mode="Edit" onsuccess={handleSuccess}> -->
+            <!-- Making object Api name dynamic and record id dynamic -->
+            <!-- <lightning-record-form object-api-name={objectApiName} record-id={recordId} columns="2" fields={fieldArray}
+                mode="Edit" onsuccess={handleSuccess}>
+            </lightning-record-form> -->
+
+            <lightning-record-form object-api-name={objectApiName} 
+            columns="2"
+             record-id={recordId}
+              mode="view"
+                layout-type="Full"
+                 onsuccess={handleSuccess}>
+
+            </lightning-record-form>
+        </lightning-card>
+    </div>
+</template>

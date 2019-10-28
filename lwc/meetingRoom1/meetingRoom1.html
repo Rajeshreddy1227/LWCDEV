@@ -1,0 +1,11 @@
+<template>
+    <lightning-layout>        
+            <!-- Simple -->
+            <div class="slds-p-around_medium lgc-bg" onclick={tileclickHandler}>
+                <lightning-tile label={meetingRoom.Name} href="/path/to/somewhere">
+                    <p class="slds-truncate" title={meetingRoom.Capacity}>{meetingRoom.Capacity}</p>
+                </lightning-tile>
+            </div>
+            <BR />      
+    </lightning-layout>
+</template>

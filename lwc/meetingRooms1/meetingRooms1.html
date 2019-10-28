@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="REVISE PARENT CALLING CHILD">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small" class="slds-p-around_medium lgc-bg">
+                <ul>
+                    <template for:each={roomInfo} for:item="currRoom">
+                        <!-- CALLING COMPONENT -->
+                        <li key={currRoom.Name}>
+                            <c-meeting-room1 meeting-room={currRoom} ontileclick={tileclickHandler}></c-meeting-room1>
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="around-medium">
+                <p>The meeting Room Clicked is:{clickedMeetingRoom}</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

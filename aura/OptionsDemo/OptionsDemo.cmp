@@ -1,0 +1,58 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <p class="options1">OPTIONS DEMO</p>
+    <aura:attribute name="colors" type="String[]" default="Red,Green,Blue"/>
+    <div>
+        <p class="InsideDiv"> I am inside DIV, One level below!</p>
+    </div>
+    
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedValue" type="String" default=""/>
+    <aura:attribute name = "search" type= "String" default = "SEARCH"></aura:attribute>
+    <aura:attribute name = "new" type= "String" default = "NEW"></aura:attribute>
+    <aura:attribute name="isDisplayed" type="Boolean" default = "true"></aura:attribute>
+    <aura:attribute name="optionsList" type="String[]" ></aura:attribute>
+    
+ <!--   <aura:handler name="init" value="{!this}" action="{!c.loadOptions}" />-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:card>
+        <lightning:layout class="slds-align_absolute-center">
+            <lightning:layoutItem padding="around-medium">
+                <lightning:select name="select" aura:id="buttonSelect" required="false" variant="label-hidden" value="{!v.selectedValue}" onchange="{!c.handleSelect}">
+                    <option value="" text="--none--"/>
+                    <aura:iteration items="{!v.optionsList}" var="curritem">
+                        <option value="{!curritem}" text="{!curritem}"/>
+                    </aura:iteration>
+                </lightning:select>
+            </lightning:layoutItem>	
+            
+            <!-- DEMO2-->   
+            
+            <!--           <lightning:select name="select" label="Select a Color" required="true" messageWhenValueMissing="Did you forget to select a color?">
+                <option value=""> -None- </option>
+                <aura:iteration items="{!v.colors}" var="color">
+                    <option value="{!color}" text="{!color}"></option>
+                </aura:iteration>
+            </lightning:select>				-->
+            
+            <!--demo 3 --> 
+            
+            <!--     <lightning:select name="mySelect" label="Select a color:" aura:id="mySelect" value="{!v.selectedValue}">
+                <aura:iteration items="{!v.options}" var="item">
+                    <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}"/>
+                </aura:iteration>
+            </lightning:select>	-->
+            
+            <lightning:layoutItem padding="around-medium">
+                <aura:if isTrue="{!v.isDisplayed}">
+                    <lightning:button variant="brand" label="{!v.search}" title="Search" onclick="{! c.handleClick }" />
+                    <lightning:button variant="Neutral" label="{#v.new}" title="New" onclick="{! c.handleClickNew }" />
+                    <aura:set attribute="else">
+                        <p>Not allowed to Display!</p>
+                    </aura:set>
+                </aura:if> 
+                
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>
