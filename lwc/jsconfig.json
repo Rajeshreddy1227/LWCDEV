@@ -1,0 +1,157 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "c/accountManager1": [
+                "../../lwc/accountManager1/accountManager1.js"
+            ],
+            "c/accountOperations": [
+                "../../lwc/accountOperations/accountOperations.js"
+            ],
+            "c/accountOperationsApex": [
+                "../../lwc/accountOperationsApex/accountOperationsApex.js"
+            ],
+            "c/accountOperationsApexImperative": [
+                "../../lwc/accountOperationsApexImperative/accountOperationsApexImperative.js"
+            ],
+            "c/bmiCalculator": [
+                "../../lwc/bmiCalculator/bmiCalculator.js"
+            ],
+            "c/childDynamicRecordForm": [
+                "../../lwc/childDynamicRecordForm/childDynamicRecordForm.js"
+            ],
+            "c/childEventFireMethodOne": [
+                "../../lwc/childEventFireMethodOne/childEventFireMethodOne.js"
+            ],
+            "c/childMethodCallChild": [
+                "../../lwc/childMethodCallChild/childMethodCallChild.js"
+            ],
+            "c/childMethodCallParent": [
+                "../../lwc/childMethodCallParent/childMethodCallParent.js"
+            ],
+            "c/childMethodInvocation": [
+                "../../lwc/childMethodInvocation/childMethodInvocation.js"
+            ],
+            "c/comboBoxforIds": [
+                "../../lwc/comboBoxforIds/comboBoxforIds.js"
+            ],
+            "c/comboboxDemo": [
+                "../../lwc/comboboxDemo/comboboxDemo.js"
+            ],
+            "c/createrecordDemoApex": [
+                "../../lwc/createrecordDemoApex/createrecordDemoApex.js"
+            ],
+            "c/cssChildCalledfromParent": [
+                "../../lwc/cssChildCalledfromParent/cssChildCalledfromParent.js"
+            ],
+            "c/cssParent": [
+                "../../lwc/cssParent/cssParent.js"
+            ],
+            "c/datatableLwc": [
+                "../../lwc/datatableLwc/datatableLwc.js"
+            ],
+            "c/eventContainer": [
+                "../../lwc/eventContainer/eventContainer.js"
+            ],
+            "c/eventSource": [
+                "../../lwc/eventSource/eventSource.js"
+            ],
+            "c/getterDemo": [
+                "../../lwc/getterDemo/getterDemo.js"
+            ],
+            "c/getterSetterDemo2": [
+                "../../lwc/getterSetterDemo2/getterSetterDemo2.js"
+            ],
+            "c/helloWorld": [
+                "../../lwc/helloWorld/helloWorld.js"
+            ],
+            "c/ifElseDirDemo": [
+                "../../lwc/ifElseDirDemo/ifElseDirDemo.js"
+            ],
+            "c/ldsRecordform": [
+                "../../lwc/ldsRecordform/ldsRecordform.js"
+            ],
+            "c/ldsaccountForms": [
+                "../../lwc/ldsaccountForms/ldsaccountForms.js"
+            ],
+            "c/ldscreaterecordDemo": [
+                "../../lwc/ldscreaterecordDemo/ldscreaterecordDemo.js"
+            ],
+            "c/ldsgetrecordDemo": [
+                "../../lwc/ldsgetrecordDemo/ldsgetrecordDemo.js"
+            ],
+            "c/ldsrecordformeditfields": [
+                "../../lwc/ldsrecordformeditfields/ldsrecordformeditfields.js"
+            ],
+            "c/ldsrecordviewformDemo": [
+                "../../lwc/ldsrecordviewformDemo/ldsrecordviewformDemo.js"
+            ],
+            "c/loopingDirectiveDemo": [
+                "../../lwc/loopingDirectiveDemo/loopingDirectiveDemo.js"
+            ],
+            "c/mapdisplayDemo": [
+                "../../lwc/mapdisplayDemo/mapdisplayDemo.js"
+            ],
+            "c/meetingRoom": [
+                "../../lwc/meetingRoom/meetingRoom.js"
+            ],
+            "c/meetingRoom1": [
+                "../../lwc/meetingRoom1/meetingRoom1.js"
+            ],
+            "c/meetingRooms": [
+                "../../lwc/meetingRooms/meetingRooms.js"
+            ],
+            "c/meetingRooms1": [
+                "../../lwc/meetingRooms1/meetingRooms1.js"
+            ],
+            "c/myFirstComponent": [
+                "../../lwc/myFirstComponent/myFirstComponent.js"
+            ],
+            "c/navigateExample": [
+                "../../lwc/navigateExample/navigateExample.js"
+            ],
+            "c/onloadDemo": [
+                "../../lwc/onloadDemo/onloadDemo.js"
+            ],
+            "c/parentEventFireHandler": [
+                "../../lwc/parentEventFireHandler/parentEventFireHandler.js"
+            ],
+            "c/parentLWCComp": [
+                "../../lwc/parentLWCComp/parentLWCComp.js"
+            ],
+            "c/parentchildMethodInvocation": [
+                "../../lwc/parentchildMethodInvocation/parentchildMethodInvocation.js"
+            ],
+            "c/publishReceiver": [
+                "../../lwc/publishReceiver/publishReceiver.js"
+            ],
+            "c/publishSource": [
+                "../../lwc/publishSource/publishSource.js"
+            ],
+            "c/pubsub": [
+                "../../lwc/pubsub/pubsub.js"
+            ],
+            "c/renderHtmldemo": [
+                "../../lwc/renderHtmldemo/renderHtmldemo.js"
+            ],
+            "c/showAccountApex": [
+                "../../lwc/showAccountApex/showAccountApex.js"
+            ],
+            "c/simpleCalculator": [
+                "../../lwc/simpleCalculator/simpleCalculator.js"
+            ],
+            "c/slotAdvancedOwner": [
+                "../../lwc/slotAdvancedOwner/slotAdvancedOwner.js"
+            ],
+            "c/slotChild": [
+                "../../lwc/slotChild/slotChild.js"
+            ],
+            "c/slotDemo": [
+                "../../lwc/slotDemo/slotDemo.js"
+            ],
+            "c/slotWrapper": [
+                "../../lwc/slotWrapper/slotWrapper.js"
+            ]
+        }
+    }
+}
