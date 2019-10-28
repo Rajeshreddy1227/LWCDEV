@@ -48,7 +48,7 @@
                 "../../lwc/cssParent/cssParent.js"
             ],
             "c/datatableLwc": [
-                "../../lwc/datatableLwc/datatableLwc.js"
+                "datatableLwc/datatableLwc.js"
             ],
             "c/eventContainer": [
                 "../../lwc/eventContainer/eventContainer.js"
